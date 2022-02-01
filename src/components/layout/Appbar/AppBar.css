@@ -1,0 +1,15 @@
+/* Hide everything above this component. */
+app,
+body,
+html {
+	display: block !important;
+	height: auto !important;
+	width: auto !important;
+	position: static !important;
+}
+
+@media only screen and (min-width: 270px) and (max-width: 767px) {
+	span.mdc-top-app-bar__title {
+		display: none !important;
+	}
+}

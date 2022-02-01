@@ -1,0 +1,9 @@
+.mdc-banner--centered .mdc-banner__content {
+	left: 0;
+	min-width: 100%;
+	padding: 0 1rem;
+	padding-right: 2.5rem;
+}
+.mdc-banner__text {
+	font-size: 1rem;
+}

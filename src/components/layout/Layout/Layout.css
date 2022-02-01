@@ -1,0 +1,48 @@
+* {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
+	-webkit-tap-highlight-color: transparent;
+}
+body,
+html {
+	max-height: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	text-align: center;
+}
+:root {
+	/* Color Themes */
+	--gold: #d4af37;
+	--black: #000000;
+	--grey: #767676;
+	--blue: #2185d0;
+	--teal: #009c95;
+	--red: #db2828;
+	--orange: #f2711c;
+	--violet: #6435c9;
+	--purple: #9627ba;
+	--pink: #e03997;
+	--light_pink: #c77c8f;
+
+	/* Subscribe Steps colors */
+	--grey: #888e94;
+	--light_gold: #d6b139;
+	--darker_gold: #c5a437;
+	--brown: #a5673f;
+	--dark_brown: #975b33;
+
+	/* Subscribe Steps & Settings Page color */
+	--darkGrey: #5c5d5d;
+
+	/* Error Page */
+	--error_color: #ce6c2f;
+}
