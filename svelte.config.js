@@ -14,9 +14,6 @@ const config = {
 		adapter: static_adapter(),
 		appDir: 'internal',
 		vite: {
-			ssr: {
-				noExternal: [/^@material\//, /^@smui(?:-extra)?\//]
-			},
 			resolve: {
 				alias: {
 					$utils: path.resolve('./src/utils'),
