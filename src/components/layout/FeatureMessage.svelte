@@ -1,8 +1,8 @@
 <div>
-	<div>
-		<h3>Coming soon! :)</h3>
-		<p style="color: grey;">"I will show a waiting attitude."—Mic. 7:7.</p>
-	</div>
+	<h3>
+		<a href="/about#subscribing">Subscribe to the next version release</a> to get this exciting feature
+		as a reward!
+	</h3>
 </div>
 
 <style>
@@ -13,7 +13,6 @@
 		height: 100%;
 		width: 100%;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 2rem;

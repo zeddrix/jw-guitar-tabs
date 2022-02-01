@@ -5,7 +5,7 @@
 
 <MetaHead
 	title="Favorites"
-	description="Add/remove your favorite songs to the easy-to-access list in this page!"
+	description="Donors/Subscribers have the privilege of adding/removing their favorite songs to the easy-to-access list in this page! Why not try it, too?"
 />
 
 <FavoritesPage />

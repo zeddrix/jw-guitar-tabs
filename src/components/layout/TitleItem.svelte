@@ -12,9 +12,11 @@
 	const songTitle = kingdom ? `Song ${num}: ${title}` : title;
 
 	const link = createLink(category, num, officialurl);
+
+	const isSubscribed = false;
 </script>
 
-<a href={link} class="item">
+<a href={link} class={`item ${isSubscribed && 'has-heart'}`}>
 	<div class="content">
 		<div class="header">{songTitle}</div>
 	</div>
@@ -23,5 +25,8 @@
 <style>
 	.item {
 		padding: 0.3rem !important;
+	}
+	.has-heart {
+		padding: 0rem !important;
 	}
 </style>

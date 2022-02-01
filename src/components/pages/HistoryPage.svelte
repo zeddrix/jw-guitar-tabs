@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ComingSoon from '../layout/ComingSoon.svelte';
+	import FeatureMessage from '../layout/FeatureMessage.svelte';
 </script>
 
 <h1>History</h1>
 
-<ComingSoon />
+<FeatureMessage />

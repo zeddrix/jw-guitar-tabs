@@ -58,13 +58,30 @@
 	up my mind to build an entirely new website where these tabs (as text) would render nicely on all
 	devices.
 </p>
-<p>
+<p id="subscribing">
 	Read more about this website's inspiration and how the guitar tabs were made <NewTabLink
 		href="https://zeddrix.com/a-new-web-app-for-jw-guitar-tabs/"
 		text="here"
 	/>.
 </p>
 <p>Thanks for coming and enjoy!</p>
+
+<h2>Subscribe to Support</h2>
+<p>
+	Some of you have expressed the desire to support the JW guitar tabs production, development, & its
+	maintenance. Thank you guys.
+</p>
+<p>
+	If you'd like to support by giving a donation for a month or monthly, you may do so by subscribing <b
+		>on the next version release of this website</b
+	>. Of course, <b>new, exciting features</b> in this website will be available to you in return
+	<b>in the future</b>.
+</p>
+<p>
+	There are other ways you can support this project (thanks for being very supportive). One way is
+	that you may share this website with your family and friends so that they may enjoy playing here,
+	too!
+</p>
 
 <h2>Copyright & Terms Of Use</h2>
 <p>

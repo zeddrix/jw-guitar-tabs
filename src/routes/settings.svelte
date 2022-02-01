@@ -5,7 +5,7 @@
 
 <MetaHead
 	title="Settings"
-	description="Customize these settings to have the feel and look you want for this website!"
+	description="Donors/Subscribers have the privilege of customizing these settings to have the feel and look they want for this website! Why not try it, too?"
 />
 
 <SettingsPage />

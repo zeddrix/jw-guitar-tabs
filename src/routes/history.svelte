@@ -5,7 +5,7 @@
 
 <MetaHead
 	title="History"
-	description="See songs you've recently visited or played in this website."
+	description="Donors/Subscribers have the privilege of seeing their recent activities in this website without sweat! Why not try it, too?"
 />
 
 <HistoryPage />
