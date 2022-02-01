@@ -7,11 +7,6 @@ export const kingdomStore = writable([]);
 export const originalStore = writable([]);
 export const childrenStore = writable([]);
 
-// FEATURES
-export const favorites = writable([]);
-export const currentFavorite = writable(false);
-export const currentSongDetails = writable({ title: '', category: '' });
-
 // MISC
 export const headTitleStore = writable(); // this gives undefined to have the default prop of head title
 

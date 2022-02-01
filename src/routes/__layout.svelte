@@ -63,10 +63,10 @@
 			const parsedSongsData = await JSON.parse(songsFromLS);
 
 			if (kingdom) {
-				// const updatedKingdomsCount = JSON.parse(localStorage.getItem('kingdomsongs')).length;
-				// if (kingdomsCount !== updatedKingdomsCount) {
-				// 	await fetchFromDBAndStore('kingdom');
-				// }
+				const updatedKingdomsCount = JSON.parse(localStorage.getItem('kingdomsongs')).length;
+				if (kingdomsCount !== updatedKingdomsCount) {
+					await fetchFromDBAndStore('kingdom');
+				}
 
 				const kingdomsongs = sortSongs(parsedSongsData);
 
