@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-467fc5b0.js",
+    "file": "start-6d253338.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -27,15 +27,15 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-d31960fd.js",
+    "file": "pages/__layout.svelte-7607b8cc.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
+      "_paths-4b3c6e7e.js",
       "_helperFunctions-2523e54d.js",
       "_navigation-bd39ff07.js",
-      "_paths-4b3c6e7e.js",
       "_NewTabLink-c0c9f34a.js",
       "_singletons-a6a7384f.js"
     ],
@@ -44,21 +44,21 @@
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-cb7cdd9b.js",
+    "file": "pages/__error.svelte-27bed047.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
-      "_NotFoundScreen-bc503e92.js",
-      "_paths-4b3c6e7e.js"
+      "_paths-4b3c6e7e.js",
+      "_NotFoundScreen-eaa14314.js"
     ],
     "css": [
       "assets/pages/__error.svelte-992190ed.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-66863baf.js",
+    "file": "pages/index.svelte-2682f363.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -79,93 +79,93 @@
     ]
   },
   "src/routes/categories/children-songs/index.svelte": {
-    "file": "pages/categories/children-songs/index.svelte-5d597725.js",
+    "file": "pages/categories/children-songs/index.svelte-5b915fd1.js",
     "src": "src/routes/categories/children-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_CategoryPage-ea97916d.js",
+      "_CategoryPage-efa3e7b1.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
-      "_LoaderScreen-85e0b185.js"
+      "_LoaderScreen-87bfbc77.js"
     ]
   },
   "src/routes/categories/children-songs/[songId].svelte": {
-    "file": "pages/categories/children-songs/_songId_.svelte-e6ff23ac.js",
+    "file": "pages/categories/children-songs/_songId_.svelte-8b62f10f.js",
     "src": "src/routes/categories/children-songs/[songId].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_TabsPage-52bbc6a3.js",
+      "_TabsPage-58a1e71c.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
       "_NewTabLink-c0c9f34a.js",
-      "_LoaderScreen-85e0b185.js",
-      "_NotFoundScreen-bc503e92.js"
+      "_LoaderScreen-87bfbc77.js",
+      "_NotFoundScreen-eaa14314.js"
     ]
   },
   "src/routes/categories/original-songs/index.svelte": {
-    "file": "pages/categories/original-songs/index.svelte-a6ac1b6c.js",
+    "file": "pages/categories/original-songs/index.svelte-7f91e2f1.js",
     "src": "src/routes/categories/original-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_CategoryPage-ea97916d.js",
+      "_CategoryPage-efa3e7b1.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
-      "_LoaderScreen-85e0b185.js"
+      "_LoaderScreen-87bfbc77.js"
     ]
   },
   "src/routes/categories/original-songs/[songId].svelte": {
-    "file": "pages/categories/original-songs/_songId_.svelte-eb5f0c5a.js",
+    "file": "pages/categories/original-songs/_songId_.svelte-354b5807.js",
     "src": "src/routes/categories/original-songs/[songId].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_TabsPage-52bbc6a3.js",
+      "_TabsPage-58a1e71c.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
       "_NewTabLink-c0c9f34a.js",
-      "_LoaderScreen-85e0b185.js",
-      "_NotFoundScreen-bc503e92.js"
+      "_LoaderScreen-87bfbc77.js",
+      "_NotFoundScreen-eaa14314.js"
     ]
   },
   "src/routes/categories/kingdom-songs/index.svelte": {
-    "file": "pages/categories/kingdom-songs/index.svelte-4497a956.js",
+    "file": "pages/categories/kingdom-songs/index.svelte-669db8a9.js",
     "src": "src/routes/categories/kingdom-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_CategoryPage-ea97916d.js",
+      "_CategoryPage-efa3e7b1.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
-      "_LoaderScreen-85e0b185.js"
+      "_LoaderScreen-87bfbc77.js"
     ]
   },
   "src/routes/categories/kingdom-songs/[songId].svelte": {
-    "file": "pages/categories/kingdom-songs/_songId_.svelte-6f20da51.js",
+    "file": "pages/categories/kingdom-songs/_songId_.svelte-162e2272.js",
     "src": "src/routes/categories/kingdom-songs/[songId].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-a14c9fe5.js",
       "_MetaHead-2dfdfdb5.js",
-      "_TabsPage-52bbc6a3.js",
+      "_TabsPage-58a1e71c.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
       "_NewTabLink-c0c9f34a.js",
-      "_LoaderScreen-85e0b185.js",
-      "_NotFoundScreen-bc503e92.js"
+      "_LoaderScreen-87bfbc77.js",
+      "_NotFoundScreen-eaa14314.js"
     ]
   },
   "src/routes/copyright.svelte": {
@@ -216,7 +216,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-8383b8db.js",
+    "file": "pages/about.svelte-8bd66b9d.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -264,8 +264,8 @@
       "_singletons-a6a7384f.js"
     ]
   },
-  "_NotFoundScreen-bc503e92.js": {
-    "file": "chunks/NotFoundScreen-bc503e92.js",
+  "_NotFoundScreen-eaa14314.js": {
+    "file": "chunks/NotFoundScreen-eaa14314.js",
     "imports": [
       "_vendor-a14c9fe5.js",
       "_paths-4b3c6e7e.js"
@@ -281,37 +281,38 @@
       "_helperFunctions-2523e54d.js"
     ]
   },
-  "_CategoryPage-ea97916d.js": {
-    "file": "chunks/CategoryPage-ea97916d.js",
+  "_CategoryPage-efa3e7b1.js": {
+    "file": "chunks/CategoryPage-efa3e7b1.js",
     "imports": [
       "_vendor-a14c9fe5.js",
       "_helperFunctions-2523e54d.js",
       "_MetaHead-2dfdfdb5.js",
       "_paths-4b3c6e7e.js",
-      "_LoaderScreen-85e0b185.js"
+      "_LoaderScreen-87bfbc77.js"
     ],
     "css": [
       "assets/CategoryPage-f73ccbf7.css"
     ]
   },
-  "_LoaderScreen-85e0b185.js": {
-    "file": "chunks/LoaderScreen-85e0b185.js",
+  "_LoaderScreen-87bfbc77.js": {
+    "file": "chunks/LoaderScreen-87bfbc77.js",
     "imports": [
-      "_vendor-a14c9fe5.js"
+      "_vendor-a14c9fe5.js",
+      "_paths-4b3c6e7e.js"
     ],
     "css": [
       "assets/LoaderScreen-75a89f03.css"
     ]
   },
-  "_TabsPage-52bbc6a3.js": {
-    "file": "chunks/TabsPage-52bbc6a3.js",
+  "_TabsPage-58a1e71c.js": {
+    "file": "chunks/TabsPage-58a1e71c.js",
     "imports": [
       "_vendor-a14c9fe5.js",
       "_helperFunctions-2523e54d.js",
       "_paths-4b3c6e7e.js",
       "_NewTabLink-c0c9f34a.js",
-      "_LoaderScreen-85e0b185.js",
-      "_NotFoundScreen-bc503e92.js"
+      "_LoaderScreen-87bfbc77.js",
+      "_NotFoundScreen-eaa14314.js"
     ],
     "css": [
       "assets/TabsPage-47f7b330.css"
