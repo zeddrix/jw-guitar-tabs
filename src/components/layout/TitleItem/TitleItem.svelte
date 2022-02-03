@@ -1,10 +1,14 @@
 <script lang="ts">
+	import './TitleItem.css';
+
 	import { base } from '$app/paths';
 	import type { SongType } from '$lib/customTypes';
 	import { currentFavorite, favorites } from '$lib/store';
 	import { createLink } from '$utils/helperFunctions';
 
 	export let song: SongType;
+
+	$: console.log($favorites);
 
 	const { title, officialurl, category, num } = song;
 
@@ -17,8 +21,6 @@
 	const favoritesFromLS = JSON.parse(localStorage.getItem('favorites'));
 	if (favoritesFromLS) {
 		favorites.set(favoritesFromLS);
-
-		// TODO: CREATE PR FOR DEV BR FROM MVP BR
 	}
 
 	let titleIsFavorite = $favorites.find((s) => s.link === link);
@@ -71,29 +73,3 @@
 		class="heart-img"
 	/>
 </a>
-
-<style>
-	.title-item {
-		padding: 0.5rem !important;
-		border-bottom: 1px solid #22242626 !important;
-		font-weight: bold !important;
-		display: flex !important;
-		align-items: center !important;
-		justify-content: space-between !important;
-		color: black !important;
-	}
-
-	.title-item {
-		cursor: pointer;
-	}
-	.title-item:first-child {
-		border-top: 1px solid #22242626;
-	}
-	.title-item:hover {
-		background: #c2c2c2;
-	}
-	.title-item:active {
-		background: grey;
-		color: white !important;
-	}
-</style>

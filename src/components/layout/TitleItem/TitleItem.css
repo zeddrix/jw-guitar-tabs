@@ -1,0 +1,23 @@
+.title-item {
+	padding: 0.5rem !important;
+	border-bottom: 1px solid #22242626 !important;
+	font-weight: bold !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	color: black !important;
+}
+
+.title-item {
+	cursor: pointer;
+}
+.title-item:first-child {
+	border-top: 1px solid #22242626;
+}
+.title-item:hover {
+	background: #c2c2c2;
+}
+.title-item:active {
+	background: grey;
+	color: white !important;
+}

@@ -3,7 +3,7 @@
 	import addSForChildrenCat from '$utils/addSForChildrenCat';
 
 	import type { SongCategoriesType } from '$lib/customTypes';
-	import TitleItem from '$components/layout/TitleItem.svelte';
+	import TitleItem from '$components/layout/TitleItem/TitleItem.svelte';
 	import LoaderScreen from '$components/screens/LoaderScreen.svelte';
 
 	export let category: SongCategoriesType;
