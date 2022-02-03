@@ -6,6 +6,7 @@
 	import Separator from '@smui/list';
 	import { H6 } from '@smui/common/elements';
 
+	import { base } from '$app/paths';
 	import { drawerOpenStore } from '$lib/store';
 	import { categories, menuItems } from '../Appbar/appbarItems';
 
@@ -15,7 +16,13 @@
 <Drawer variant="modal" bind:open={$drawerOpenStore}>
 	<Header style="background: saddlebrown; padding: 1rem 0">
 		<Title style="color: white; display: flex; justify-content: flex-start; align-items: center;">
-			<img src="/img/jw-guitar-tabs-logo.svg" class="jwgt-logo" alt="JWGT" height={50} width={50} />
+			<img
+				src="{base}/img/jw-guitar-tabs-logo.svg"
+				class="jwgt-logo"
+				alt="JWGT"
+				height={50}
+				width={50}
+			/>
 			JW Guitar Tabs
 		</Title>
 	</Header>

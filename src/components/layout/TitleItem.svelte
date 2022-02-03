@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { SongType } from '$lib/customTypes';
 	import { currentFavorite, favorites } from '$lib/store';
 	import { createLink } from '$utils/helperFunctions';
@@ -60,11 +61,11 @@
 	};
 </script>
 
-<a href={link} class="title-item">
+<a href={`${base}${link}`} class="title-item">
 	{songTitle}
 	<img
 		on:click={toggleHeart}
-		src={`/img/hearts/red-heart${titleIsFavorite ? '' : '-outline'}.svg`}
+		src={`${base}/img/hearts/red-heart${titleIsFavorite ? '' : '-outline'}.svg`}
 		width="30px"
 		alt="heart"
 		class="heart-img"

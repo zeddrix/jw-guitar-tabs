@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	import { base } from '$app/paths';
 	import type { SongCategoriesType } from '$lib/customTypes';
 	import { kingdomStore, originalStore, childrenStore, fetchingSongsStore } from '$lib/store';
 	import { sortSongs } from '$utils/helperFunctions';
@@ -18,13 +19,15 @@
 	const fetchFromDBAndStore = async (category: SongCategoriesType) => {
 		fetchingSongsStore.set(true);
 
-		const res = await fetch(`/api/categories/${category}-songs`);
+		const res = await fetch(`${base}/api/categories/${category}-songs`);
+		// const res = await fetch(`${base}/categories/${category}-songs`);
+		// const res = await fetch(`/api/categories/${category}-songs`);
 		const data = await res.json();
 
 		if (!res.ok) {
-			throw new Error(
-				`Something went wrong with loading the ${category} songs and responded with the status ${res.status}`
-			);
+			const errMsg = `Something went wrong with loading the ${category} songs and responded with the status ${res.status}`;
+			console.error(errMsg);
+			throw new Error(errMsg);
 		}
 
 		const kingdom = category === 'kingdom';

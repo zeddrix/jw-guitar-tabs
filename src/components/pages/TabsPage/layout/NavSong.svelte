@@ -13,6 +13,7 @@
 	$: songTitle = kingdom ? `Song ${song.num}: ${song.title}` : song.title;
 	$: songIdUrl = !kingdom ? `${song.num}-` : '';
 	$: link = `/categories/${category}-songs/${songIdUrl}${song.officialurl}-guitar-tabs`;
+	import { base } from '$app/paths';
 </script>
 
 {#if !song}
@@ -20,7 +21,7 @@
 {:else}
 	<h2>
 		{nav} Song:
-		<a href={link}>
+		<a href={`${base}${link}`}>
 			<em>{songTitle}</em>
 		</a>
 	</h2>

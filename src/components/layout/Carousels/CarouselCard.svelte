@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import { capital1stLetter, createLink } from '$utils/helperFunctions';
 
@@ -10,8 +11,11 @@
 	const link = createLink(category, num, officialurl);
 </script>
 
-<a href={link} on:touchstart={() => goto(link)} class="card">
-	<img src={`/img/guitars/${category}-guitar.jpg`} alt={`guitar image for ${category} category`} />
+<a href={`${base}/${link}`} on:touchstart={() => goto(link)} class="card">
+	<img
+		src={`${base}/img/guitars/${category}-guitar.jpg`}
+		alt={`guitar image for ${category} category`}
+	/>
 	<div class="title_category_container">
 		<p class="title">
 			{#if category === 'kingdom'}

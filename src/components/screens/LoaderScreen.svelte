@@ -1,5 +1,15 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="loader_container">
-	<img src="/img/screens/loader.gif" alt="Loading. . ." height={175} width={250} class="loader" />
+	<img
+		src="{base}/img/screens/loader.gif"
+		alt="Loading. . ."
+		height={175}
+		width={250}
+		class="loader"
+	/>
 </div>
 
 <style>

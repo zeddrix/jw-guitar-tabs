@@ -9,10 +9,11 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
 		adapter: static_adapter(),
 		appDir: 'internal',
+		paths: {
+			base: '/jw-guitar-tabs'
+		},
 		vite: {
 			resolve: {
 				alias: {
