@@ -1,6 +1,11 @@
 <script lang="ts">
 	import './TitleItem.css';
 
+	import Tooltip, { Wrapper, Content } from '@smui/tooltip';
+
+	import { base } from '$app/paths';
+	import { favorites } from '$lib/store';
+
 	export let fav: {
 		title: string;
 		category: string;
@@ -8,9 +13,6 @@
 	};
 
 	const { title, category, link } = fav;
-
-	import { base } from '$app/paths';
-	import { favorites } from '$lib/store';
 
 	const toggleHeart = (e, link: string) => {
 		e.preventDefault();
@@ -24,11 +26,14 @@
 <a href={`${base}${link}`} class="title-item">
 	{title}
 	{category}
-	<img
-		on:click={(e) => toggleHeart(e, link)}
-		src={`${base}/img/hearts/red-heart.svg`}
-		width="30px"
-		alt="heart"
-		class="heart-img"
-	/>
+	<Wrapper rich>
+		<img
+			on:click={(e) => toggleHeart(e, link)}
+			src={`${base}/img/hearts/red-heart.svg`}
+			width="30px"
+			alt="heart"
+			class="heart-img"
+		/>
+		<Tooltip yPos="above"><Content>Remove from favorites</Content></Tooltip>
+	</Wrapper>
 </a>

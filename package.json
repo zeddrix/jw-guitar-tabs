@@ -26,6 +26,7 @@
 		"@smui/list": "^6.0.0-beta.13",
 		"@smui/menu": "^6.0.0-beta.13",
 		"@smui/textfield": "^6.0.0-beta.13",
+		"@smui/tooltip": "^6.0.0-beta.13",
 		"@smui/top-app-bar": "^6.0.0-beta.13",
 		"@sveltejs/adapter-static": "^1.0.0-next.26",
 		"@sveltejs/kit": "next",

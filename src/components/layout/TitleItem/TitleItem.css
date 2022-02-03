@@ -21,3 +21,12 @@
 	background: grey;
 	color: white !important;
 }
+
+/* Make tooltips dark by uncommenting lines below */
+/* .mdc-tooltip.mdc-tooltip--rich .mdc-tooltip__surface {
+	background: black !important;
+}
+
+.mdc-tooltip__content {
+	color: white !important;
+} */

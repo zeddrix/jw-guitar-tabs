@@ -1,6 +1,8 @@
 <script lang="ts">
 	import './TitleItem.css';
 
+	import Tooltip, { Wrapper, Content } from '@smui/tooltip';
+
 	import { base } from '$app/paths';
 	import type { SongType } from '$lib/customTypes';
 	import { currentFavorite, favorites } from '$lib/store';
@@ -65,11 +67,17 @@
 
 <a href={`${base}${link}`} class="title-item">
 	{songTitle}
-	<img
-		on:click={toggleHeart}
-		src={`${base}/img/hearts/red-heart${titleIsFavorite ? '' : '-outline'}.svg`}
-		width="30px"
-		alt="heart"
-		class="heart-img"
-	/>
+	<Wrapper rich>
+		<img
+			on:click={toggleHeart}
+			src={`${base}/img/hearts/red-heart${titleIsFavorite ? '' : '-outline'}.svg`}
+			width="30px"
+			alt="heart"
+			class="heart-img"
+		/>
+
+		<Tooltip yPos="above">
+			<Content>{titleIsFavorite ? 'Remove from' : 'Add to'} favorites</Content>
+		</Tooltip>
+	</Wrapper>
 </a>
