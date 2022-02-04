@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { SongCategoriesType } from '$lib/customTypes';
+	import { base } from '$app/paths';
 
 	export let prevSong = null || undefined;
 	export let nextSong = null || undefined;
@@ -20,7 +21,7 @@
 {:else}
 	<h2>
 		{nav} Song:
-		<a href={link}>
+		<a href={`${base}${link}`}>
 			<em>{songTitle}</em>
 		</a>
 	</h2>

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import Segment from '../layout/Segment.svelte';
 
 	export let message = 'Something went wrong...';
@@ -7,7 +9,7 @@
 <Segment>
 	<h1 class="error_color">Something Went Wrong...</h1>
 	<img
-		src="/img/screens/sad-face.png"
+		src="{base}/img/screens/sad-face.png"
 		alt="Sad face icon because something when wrong"
 		height={200}
 		width={200}

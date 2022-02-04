@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import type { SongType } from '$lib/customTypes';
 
 	import { createLink } from '$utils/helperFunctions';
@@ -14,7 +16,7 @@
 	const link = createLink(category, num, officialurl);
 </script>
 
-<a href={link} class="item">
+<a href={`${base}${link}`} class="item">
 	<div class="content">
 		<div class="header">{songTitle}</div>
 	</div>

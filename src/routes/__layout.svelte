@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	import { base } from '$app/paths';
 	import type { SongCategoriesType } from '$lib/customTypes';
 	import { kingdomStore, originalStore, childrenStore, fetchingSongsStore } from '$lib/store';
 	import { sortSongs } from '$utils/helperFunctions';
@@ -18,7 +19,8 @@
 	const fetchFromDBAndStore = async (category: SongCategoriesType) => {
 		fetchingSongsStore.set(true);
 
-		const res = await fetch(`/api/categories/${category}-songs`);
+		const res = await fetch(`${base}/api/categories/${category}-songs`);
+
 		const data = await res.json();
 
 		if (!res.ok) {

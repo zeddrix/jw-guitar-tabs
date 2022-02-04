@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { capital1stLetter } from '$utils/helperFunctions';
 
 	const cats = ['kingdom', 'original', 'children'];
@@ -8,8 +9,8 @@
 <div class="ui stackable three column grid">
 	{#each cats as c (c)}
 		<div class="column card">
-			<a href={`/categories/${c}-songs`}>
-				<img src={`/img/guitars/${c}-guitar.jpg`} alt={`guitar image for ${c} category`} />
+			<a href={`${base}/categories/${c}-songs`}>
+				<img src={`${base}/img/guitars/${c}-guitar.jpg`} alt={`guitar image for ${c} category`} />
 				<p class="centered">
 					{capital1stLetter(c)}{c === `children` ? `'s` : ``}
 					Songs

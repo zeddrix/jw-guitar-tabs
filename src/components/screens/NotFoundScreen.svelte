@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import Segment from '../layout/Segment.svelte';
 
 	const message404 = "Oops! The page you're looking for doesn't exist (yet).";
@@ -6,9 +8,9 @@
 
 <Segment>
 	<h1>Page Not Found . . .</h1>
-	<img src="/img/screens/not-found.gif" alt={message404} />
+	<img src="{base}/img/screens/not-found.gif" alt={message404} />
 	<p class="message_404">{message404}</p>
-	<a href="/">
+	<a href={base}>
 		<button class="ui brown basic button">Go Back Home</button>
 	</a>
 </Segment>

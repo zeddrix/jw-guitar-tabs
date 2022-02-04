@@ -1,21 +1,23 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import NewTabLink from '../layout/NewTabLink.svelte';
 
 	const logos = [
 		{
-			src: 'img/official-logos/svelte-logo.png',
+			src: `${base}/img/official-logos/svelte-logo.png`,
 			href: 'https://svelte.dev/'
 		},
 		{
-			src: 'img/official-logos/sveltematerialui-logo.png',
+			src: `${base}/img/official-logos/sveltematerialui-logo.png`,
 			href: 'https://sveltematerialui.com/'
 		},
 		{
-			src: 'img/official-logos/semantic-ui-logo.png',
+			src: `${base}/img/official-logos/semantic-ui-logo.png`,
 			href: 'https://semantic-ui.com/'
 		},
 		{
-			src: 'img/official-logos/mongodb-logo.png',
+			src: `${base}/img/official-logos/mongodb-logo.png`,
 			href: 'https://www.mongodb.com/'
 		}
 	];
@@ -36,8 +38,8 @@
 <p>
 	We not only love singing and listening to our Kingdom, Original, and Children's songs—we're also
 	moved by it so we play them on our guitars for entertainment, during free times, and most
-	importantly, for worship. <a href="/">JW Guitar Tabs</a> is a website where people who love our JW
-	songs can enjoy playing the simplest tabs on their guitars.
+	importantly, for worship. <a href={base}>JW Guitar Tabs</a> is a website where people who love our
+	JW songs can enjoy playing the simplest tabs on their guitars.
 </p>
 
 <h3>Why build a website for JWGT?</h3>
@@ -68,7 +70,7 @@
 
 <h2>Copyright & Terms Of Use</h2>
 <p>
-	You may read Copyright & Terms Of Use <a href="/copyright">here</a>.
+	You may read Copyright & Terms Of Use <a href="{base}/copyright">here</a>.
 </p>
 
 <h2>Credits</h2>

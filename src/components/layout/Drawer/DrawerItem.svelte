@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	export let name: string;
 	export let link: string;
 	export let icon: string;
@@ -18,7 +20,7 @@
 </script>
 
 <!-- <Item href={link} on:click={() => setActive(name)} activated={active === name}> -->
-<Item href={link} on:click={() => drawerOpenStore.set(false)}>
+<Item href={`${base}${link}`} on:click={() => drawerOpenStore.set(false)}>
 	<Graphic class="material-icons" aria-hidden="true">{icon}</Graphic>
 	<Text>{name}</Text>
 </Item>
