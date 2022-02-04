@@ -20,7 +20,7 @@
 	<LoaderScreen />
 {:else}
 	<div class="ui celled list">
-		{#each songs as song (song._id)}
+		{#each songs as song (song.num + song.officialurl)}
 			<TitleItem {song} />
 		{/each}
 	</div>

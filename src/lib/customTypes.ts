@@ -1,5 +1,5 @@
 export type SongType = {
-	category: string;
+	// category: string;
 	num: number;
 	officialurl: string;
 	repeat: number;
@@ -8,7 +8,7 @@ export type SongType = {
 	tabs: object[];
 	title: string;
 	verse: string;
-	_id: string;
+	// _id: string;
 };
 
 export type SearchResultType = {

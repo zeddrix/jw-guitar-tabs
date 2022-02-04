@@ -6,7 +6,7 @@
 	"repository": "https://github.com/zeddrix/jw-guitar-tabs_svelte-web",
 	"scripts": {
 		"dev": "svelte-kit dev -p 3030",
-		"build": "npm run smui-light && rm -rf build && svelte-kit build --verbose && touch build/.nojekyll",
+		"build": "npm run prepare && rm -rf build && svelte-kit build --verbose && touch build/.nojekyll",
 		"deploy": "npm run build && npx gh-pages -d build -t true",
 		"preview": "svelte-kit preview -p 3030",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
