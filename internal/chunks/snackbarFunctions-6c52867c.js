@@ -1,1 +1,0 @@
-import"./vendor-9008b648.js";import{i as e}from"./helperFunctions-e4ca53b9.js";const r=()=>{e.set({text:"Added to favorites",open:!0})},a=()=>{e.set({text:"Removed from favorites",open:!0})};export{r as a,a as r};
