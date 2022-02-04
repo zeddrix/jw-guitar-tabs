@@ -5,6 +5,7 @@
 
 	import { base } from '$app/paths';
 	import { favorites } from '$lib/store';
+	import { removeFromFavoritesSnackbar } from '$utils/snackbarFunctions.svelte';
 
 	export let fav: {
 		title: string;
@@ -17,7 +18,9 @@
 	const toggleHeart = (e, link: string) => {
 		e.preventDefault();
 
-		favorites.set($favorites.filter((fav) => fav.link !== link));
+		favorites.set($favorites.filter((fav) => fav.link != link));
+
+		removeFromFavoritesSnackbar();
 
 		localStorage.setItem('favorites', JSON.stringify($favorites));
 	};

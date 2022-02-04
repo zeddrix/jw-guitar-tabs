@@ -7,10 +7,12 @@
 	import type { SongType } from '$lib/customTypes';
 	import { currentFavorite, favorites } from '$lib/store';
 	import { createLink } from '$utils/helperFunctions';
+	import {
+		addToFavoritesSnackbar,
+		removeFromFavoritesSnackbar
+	} from '$utils/snackbarFunctions.svelte';
 
 	export let song: SongType;
-
-	$: console.log($favorites);
 
 	const { title, officialurl, category, num } = song;
 
@@ -43,22 +45,17 @@
 
 		if (titleIsFavorite) {
 			favorites.set($favorites.filter((fav) => fav.link !== link));
-
+			removeFromFavoritesSnackbar();
 			localStorage.setItem('favorites', JSON.stringify($favorites));
-			// copy toast code from justcolor
-			// warningToast('Song removed from favorites');
 		} else {
 			const newFav = {
 				title: songTitle,
 				category: 'Kingdom Songs',
 				link
 			};
-
 			addToFavorites(newFav);
+			addToFavoritesSnackbar();
 			localStorage.setItem('favorites', JSON.stringify($favorites));
-
-			// copy toast code from justcolor
-			// successToast('Song added to favorites');
 		}
 
 		titleIsFavorite = !titleIsFavorite;

@@ -4,6 +4,7 @@
 	import Footer from '../Footer.svelte';
 
 	import './Layout.css';
+	import Snackbar from '../Snackbar.svelte';
 </script>
 
 <CookiesBanner />
@@ -11,6 +12,7 @@
 <div class="main">
 	<slot />
 </div>
+<Snackbar />
 <Footer />
 
 <style>
@@ -25,5 +27,14 @@
 		.main {
 			min-width: 90vw;
 		}
+	}
+	:global(.mdc-snackbar__surface) {
+		background: white !important;
+	}
+	:global(.mdc-snackbar__label) {
+		color: black !important;
+	}
+	:global(.mdc-snackbar__dismiss) {
+		color: black !important;
 	}
 </style>

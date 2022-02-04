@@ -14,7 +14,7 @@
 <h1>Favorites</h1>
 
 {#if $favorites}
-	{#each $favorites as fav}
+	{#each $favorites as fav (fav.link)}
 		<FavoriteTitleItem {fav} />
 	{/each}
 {/if}

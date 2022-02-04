@@ -12,6 +12,13 @@ export const favorites = writable([]);
 export const currentFavorite = writable(false);
 export const currentSongDetails = writable({ title: '', category: '' });
 
+export const snackbarStore: {
+	text: string;
+	open: boolean;
+} = writable({
+	text: '',
+	open: false
+});
 // MISC
 export const headTitleStore = writable(); // this gives undefined to have the default prop of head title
 
