@@ -12,6 +12,8 @@ export const favorites = writable([]);
 export const currentFavorite = writable(false);
 export const currentSongDetails = writable({ title: '', category: '' });
 
+export const history = writable([]);
+
 export const snackbarStore: {
 	text: string;
 	open: boolean;

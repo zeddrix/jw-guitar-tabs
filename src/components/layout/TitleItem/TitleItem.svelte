@@ -1,7 +1,7 @@
 <script lang="ts">
 	import './TitleItem.css';
 
-	import Tooltip, { Wrapper, Content } from '@smui/tooltip';
+	import { Wrapper } from '@smui/tooltip';
 
 	import { base } from '$app/paths';
 	import type { SongType } from '$lib/customTypes';
@@ -18,6 +18,9 @@
 	const { title, officialurl, category, num } = song;
 
 	const kingdom = category === 'kingdom';
+	const original = category === 'original';
+
+	const fullCat = kingdom ? 'Kingdom Songs' : original ? 'Original Songs' : "Children's Songs";
 
 	const songTitle = kingdom ? `Song ${num}: ${title}` : title;
 
@@ -51,7 +54,7 @@
 		} else {
 			const newFav = {
 				title: songTitle,
-				category: 'Kingdom Songs',
+				category: fullCat,
 				link
 			};
 			addToFavorites(newFav);

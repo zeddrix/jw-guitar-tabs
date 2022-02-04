@@ -1,10 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 	import type { SongCategoriesType } from '$lib/customTypes';
-	import { kingdomStore, originalStore, childrenStore, fetchingSongsStore } from '$lib/store';
-	import { sortSongs } from '$utils/helperFunctions';
+	import {
+		kingdomStore,
+		originalStore,
+		childrenStore,
+		fetchingSongsStore,
+		history
+	} from '$lib/store';
+	import { get1stPath, get2ndPath, get3rdPath, sortSongs } from '$utils/helperFunctions';
 	import calculateSongsCount from '$utils/calculateSongsCount';
 	import {
 		createChildrenSongsWithCat,
@@ -98,7 +105,52 @@
 		getSongs('kingdom');
 		getSongs('original');
 		getSongs('children');
+
+		const historyFromLS = localStorage.getItem('history');
+		if (historyFromLS) {
+			const parsedHistory = await JSON.parse(historyFromLS);
+			history.set(parsedHistory);
+		}
 	});
+
+	$: songs = [...$kingdomStore, ...$originalStore, ...$childrenStore];
+
+	$: url = $page.url.pathname;
+
+	$: if (url) {
+		let firstPath = get1stPath(url);
+
+		if (firstPath === 'categories') {
+			let urlCategory = get2ndPath(url);
+			let thirdPath = get3rdPath(url);
+
+			const kingdom = urlCategory === 'kingdom-songs';
+
+			let category =
+				urlCategory === 'kingdom-songs'
+					? 'Kingdom Songs'
+					: urlCategory === 'original-songs'
+					? 'Original Songs'
+					: "Children's Songs";
+
+			let song = songs.find(
+				(song) => `${!kingdom ? song.num + '-' : ''}${song.officialurl}-guitar-tabs` == thirdPath
+			);
+
+			if (song && category && url) {
+				const newFav = {
+					dateTime: new Date().toLocaleString(),
+					title: song.title,
+					category,
+					link: url
+				};
+
+				$history.push(newFav);
+
+				localStorage.setItem('history', JSON.stringify($history));
+			}
+		}
+	}
 </script>
 
 <Layout><slot /></Layout>

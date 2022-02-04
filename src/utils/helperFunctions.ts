@@ -15,3 +15,14 @@ export const createLink = (category: SongCategoriesType, num: number, officialur
 };
 
 export const sortSongs = (songs: SongType[]) => songs.sort((a, b) => a.num - b.num);
+
+// GET URL
+export const getUrl = (url: string, pathNum: number) => {
+	return url.split('/')[url.split('/').length - pathNum];
+};
+
+export const get1stPath = (url: string) => getUrl(url, 3);
+
+export const get2ndPath = (url: string) => getUrl(url, 2);
+
+export const get3rdPath = (url: string) => getUrl(url, 1);
