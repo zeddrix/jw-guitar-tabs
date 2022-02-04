@@ -11,6 +11,7 @@
 		addToFavoritesSnackbar,
 		removeFromFavoritesSnackbar
 	} from '$utils/snackbarFunctions.svelte';
+	import HeartTooltip from './HeartTooltip.svelte';
 
 	export let song: SongType;
 
@@ -73,8 +74,6 @@
 			class="heart-img"
 		/>
 
-		<Tooltip yPos="above">
-			<Content>{titleIsFavorite ? 'Remove from' : 'Add to'} favorites</Content>
-		</Tooltip>
+		<HeartTooltip remove={titleIsFavorite} />
 	</Wrapper>
 </a>
