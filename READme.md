@@ -42,8 +42,6 @@ On every file having the **href** (local file) and **img** attributes, be sure t
 	/>
 ```
 
-On **\_\_layout.svelte**,
-
 On **app.html**, change
 
 `<link rel="icon" href="/favicon.ico" />`
@@ -53,3 +51,5 @@ to
 `<link rel="icon" href="/jw-guitar-tabs/favicon.ico" />`
 
 ## A custom domain
+
+You don't have to do any of the things above.
