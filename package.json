@@ -33,29 +33,27 @@
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.10.1",
 		"@typescript-eslint/parser": "^5.10.1",
+		"dotenv": "^15.0.1",
 		"eslint": "^8.8.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.4.0",
 		"fomantic-ui": "^2.8.8",
+		"gh-pages": "^3.2.3",
+		"lodash": "^4.17.21",
+		"mongodb": "^4.3.1",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.6.0",
 		"sass": "^1.49.0",
 		"smui-theme": "^6.0.0-beta.13",
 		"svelte": "^3.46.3",
 		"svelte-carousel": "^1.0.16",
+		"svelte-check": "^2.4.2",
 		"svelte-device-detector": "^0.2.2",
 		"svelte-preprocess": "^4.10.2",
 		"svelte-typeahead": "^4.2.1",
 		"tslib": "^2.3.1",
-		"typescript": "^4.5.5"
+		"typescript": "^4.5.5",
+		"uuid": "^8.3.2"
 	},
-	"type": "module",
-	"dependencies": {
-		"colors": "^1.4.0",
-		"dotenv": "^15.0.0",
-		"gh-pages": "^3.2.3",
-		"lodash": "^4.17.21",
-		"mongodb": "^4.3.1",
-		"svelte-check": "^2.4.0"
-	}
+	"type": "module"
 }

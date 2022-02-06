@@ -45,6 +45,7 @@
 </a>
 
 <style>
+	/* Additional styles for this component */
 	.title-item .content {
 		display: flex;
 		flex-direction: column;

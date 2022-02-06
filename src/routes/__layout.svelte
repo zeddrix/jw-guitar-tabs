@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { v4 as uuid } from 'uuid';
 
 	import { page } from '$app/stores';
 
@@ -92,19 +93,22 @@
 			);
 
 			if (song && category && url) {
-				const newFav = {
+				const newHis = {
 					dateTime: new Date().toLocaleString(),
-					title: song.title,
+					title: kingdom ? `Song ${song.num}: ${song.title}` : song.title,
 					category,
-					link: url
+					link: url,
+					id: uuid()
 				};
 
-				$history.push(newFav);
+				$history.push(newHis);
 
 				localStorage.setItem('history', JSON.stringify($history));
 			}
 		}
 	}
+
+	$: console.log('$history.length', $history.length);
 </script>
 
 <Layout><slot /></Layout>

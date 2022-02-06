@@ -17,7 +17,7 @@
 	<h2>What's New</h2>
 
 	<Carousel>
-		{#each newSongs as { title, category, officialurl, _id, num } (_id)}
+		{#each newSongs as { title, category, officialurl, num } (officialurl)}
 			<CarouselCard {title} {num} {category} {officialurl} />
 		{/each}
 	</Carousel>
