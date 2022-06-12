@@ -17,6 +17,7 @@ const config = {
 		prerender: {
 			default: true
 		},
+		trailingSlash: 'always',
 		vite: {
 			resolve: {
 				alias: {
@@ -25,7 +26,7 @@ const config = {
 				}
 			},
 			optimizeDeps: {
-				include: ['fuzzy']
+				include: ['fuzzy', 'lodash.get', 'lodash.isequal', 'lodash.clonedeep']
 			}
 		}
 	}
