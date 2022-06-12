@@ -33,10 +33,11 @@
 			gtag('config', 'G-ML9P4CWX19');
 		</script>
 
-		<meta http-equiv="content-security-policy" content=""><title>History | JW Guitar Tabs</title><meta name="description" content="See songs you&#39;ve recently visited or played in this website." data-svelte="svelte-p7l4te">
+		<meta http-equiv="content-security-policy" content=""><title>Loading | JW Guitar Tabs</title><meta name="description" content="Enjoy playing one of our Kingdom songs, entitled Loading, on your guitar!" data-svelte="svelte-p7l4te">
 	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/Layout-2280ab10.css">
-	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/pages/history.svelte-e51ba777.css">
-	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/TitleItem-567ad040.css">
+	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/TabsPage-47f7b330.css">
+	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/LoaderScreen-75a89f03.css">
+	<link rel="stylesheet" href="/jw-guitar-tabs/internal/immutable/assets/NotFoundScreen-a4058da8.css">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/start-6c235252.js">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/index-d0243fdd.js">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/index-e0ca695e.js">
@@ -50,8 +51,11 @@
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/classAdderBuilder-f411ee8a.js">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/NewTabLink-8d168707.js">
-	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/pages/history.svelte-0c30fef7.js">
+	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/pages/categories/kingdom-songs/_songId_.svelte-aaa756d6.js">
 	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/MetaHead-03611795.js">
+	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/TabsPage-07d95ad2.js">
+	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/LoaderScreen-755743ba.js">
+	<link rel="modulepreload" href="/jw-guitar-tabs/internal/immutable/chunks/NotFoundScreen-a9a27fc2.js">
 	</head>
 
 	<body>
@@ -136,10 +140,8 @@
 
 <div class="main svelte-tlojcu">
 
-<h1>History</h1>
-
-<p style="text-align: center; color: grey">You have no recent activites. Start browsing, play songs, and enjoy!
-	</p></div>
+<div class="loader_container svelte-onzp9o"><img src="/jw-guitar-tabs/img/screens/loader.gif" alt="Loading. . ." height="175" width="250" class="loader svelte-onzp9o">
+</div></div>
 <aside class="mdc-snackbar"><div class="mdc-snackbar__surface" role="status" aria-relevant="additions"><span class="mdc-snackbar__label" aria-atomic="false"></span>
 	<div class="mdc-snackbar__actions" aria-atomic="true"><button class="material-icons mdc-icon-button mdc-icon-button--display-flex mdc-snackbar__dismiss" style="" title="Dismiss"><div class="mdc-icon-button__ripple"></div>
   close</button>
@@ -151,10 +153,10 @@
 </p>
 
 
-		<script type="module" data-sveltekit-hydrate="1lj9vcc">
+		<script type="module" data-sveltekit-hydrate="10d3ojd">
 		import { start } from "/jw-guitar-tabs/internal/immutable/start-6c235252.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1lj9vcc"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="10d3ojd"]').parentNode,
 			paths: {"base":"/jw-guitar-tabs","assets":"/jw-guitar-tabs"},
 			session: {},
 			route: true,
@@ -163,9 +165,9 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 11],
-				params: {},
-				routeId: "history"
+				nodes: [0, 5],
+				params: {songId:"*"},
+				routeId: "categories/kingdom-songs/[songId]"
 			}
 		});
 	</script></div>
