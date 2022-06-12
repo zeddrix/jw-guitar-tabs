@@ -1,5 +1,4 @@
 import { MongoClient } from 'mongodb';
-import 'colors';
 import { variables } from '$lib/variables';
 
 const fetchSongsDB = async (collection: 'kingdoms' | 'originals' | 'childrens') => {

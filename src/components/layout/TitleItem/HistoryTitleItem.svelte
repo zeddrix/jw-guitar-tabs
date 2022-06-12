@@ -1,8 +1,6 @@
 <script lang="ts">
 	import './TitleItem.css';
 
-	import { base } from '$app/paths';
-
 	export let his: {
 		category: string;
 		title: string;

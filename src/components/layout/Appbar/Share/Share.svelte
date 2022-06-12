@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { shares } from '../appbarItems';
-	import Menu, { MenuComponentDev } from '@smui/menu';
+	import Menu from '@smui/menu';
+	import type { MenuComponentDev } from '@smui/menu';
 	let menu: MenuComponentDev;
 
 	import IconButton from '@smui/icon-button';

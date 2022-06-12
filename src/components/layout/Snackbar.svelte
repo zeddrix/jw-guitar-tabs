@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Snackbar, { Actions, Label, SnackbarComponentDev } from '@smui/snackbar';
+	import Snackbar, { Actions, Label } from '@smui/snackbar';
+	import type { SnackbarComponentDev } from '@smui/snackbar';
 
 	import IconButton from '@smui/icon-button';
 	import { snackbarStore } from '$lib/store';

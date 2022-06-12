@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import static_adapter from '@sveltejs/adapter-static';
+import adapter_static from '@sveltejs/adapter-static';
 import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,10 +9,13 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: static_adapter(),
+		adapter: adapter_static(),
 		appDir: 'internal',
 		paths: {
 			base: '/jw-guitar-tabs'
+		},
+		prerender: {
+			default: true
 		},
 		vite: {
 			resolve: {

@@ -1,13 +1,8 @@
 <script lang="ts">
 	import './AppBar.css';
 
-	import TopAppBar, {
-		Row,
-		Section,
-		Title as TopAppBarTitle,
-		AutoAdjust,
-		TopAppBarComponentDev
-	} from '@smui/top-app-bar';
+	import TopAppBar, { Row, Section, Title, AutoAdjust } from '@smui/top-app-bar';
+	import type { TopAppBarComponentDev } from '@smui/top-app-bar';
 	let topAppBar: TopAppBarComponentDev;
 	import IconButton from '@smui/icon-button';
 	import { Scrim } from '@smui/drawer';
@@ -25,7 +20,7 @@
 	<Row>
 		<Section>
 			<IconButton class="material-icons" on:click={onToggle}>menu</IconButton>
-			<TopAppBarTitle style="margin-right: 1rem;">JW Guitar Tabs</TopAppBarTitle>
+			<Title style="margin-right: 1rem;">JW Guitar Tabs</Title>
 			<Search />
 		</Section>
 		<Section align="end" toolbar>
