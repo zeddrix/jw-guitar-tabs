@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-95c01334.js",
+    "file": "start-5b791d77.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -96,17 +96,17 @@
     ]
   },
   "src/routes/categories/children-songs/index.svelte": {
-    "file": "pages/categories/children-songs/index.svelte-f91c8f6f.js",
+    "file": "pages/categories/children-songs/index.svelte-b5e47d58.js",
     "src": "src/routes/categories/children-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-d0243fdd.js",
       "_MetaHead-03611795.js",
-      "_CategoryPage-68ce4e2a.js",
+      "_CategoryPage-023b9c6c.js",
       "_helperFunctions-688329b2.js",
       "_index-e0ca695e.js",
-      "_HeartTooltip-f718ba6d.js",
+      "_snackbarFunctions-382bfee3.js",
       "_classAdderBuilder-f411ee8a.js",
       "_paths-396f020f.js",
       "_LoaderScreen-755743ba.js"
@@ -134,17 +134,17 @@
     ]
   },
   "src/routes/categories/kingdom-songs/index.svelte": {
-    "file": "pages/categories/kingdom-songs/index.svelte-f2df42fb.js",
+    "file": "pages/categories/kingdom-songs/index.svelte-a087198f.js",
     "src": "src/routes/categories/kingdom-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-d0243fdd.js",
       "_MetaHead-03611795.js",
-      "_CategoryPage-68ce4e2a.js",
+      "_CategoryPage-023b9c6c.js",
       "_helperFunctions-688329b2.js",
       "_index-e0ca695e.js",
-      "_HeartTooltip-f718ba6d.js",
+      "_snackbarFunctions-382bfee3.js",
       "_classAdderBuilder-f411ee8a.js",
       "_paths-396f020f.js",
       "_LoaderScreen-755743ba.js"
@@ -172,17 +172,17 @@
     ]
   },
   "src/routes/categories/original-songs/index.svelte": {
-    "file": "pages/categories/original-songs/index.svelte-3ff861e8.js",
+    "file": "pages/categories/original-songs/index.svelte-76a81cfe.js",
     "src": "src/routes/categories/original-songs/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-d0243fdd.js",
       "_MetaHead-03611795.js",
-      "_CategoryPage-68ce4e2a.js",
+      "_CategoryPage-023b9c6c.js",
       "_helperFunctions-688329b2.js",
       "_index-e0ca695e.js",
-      "_HeartTooltip-f718ba6d.js",
+      "_snackbarFunctions-382bfee3.js",
       "_classAdderBuilder-f411ee8a.js",
       "_paths-396f020f.js",
       "_LoaderScreen-755743ba.js"
@@ -204,18 +204,18 @@
     ]
   },
   "src/routes/favorites.svelte": {
-    "file": "pages/favorites.svelte-995e442c.js",
+    "file": "pages/favorites.svelte-99f39c34.js",
     "src": "src/routes/favorites.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-d0243fdd.js",
       "_MetaHead-03611795.js",
-      "_HeartTooltip-f718ba6d.js",
+      "_snackbarFunctions-382bfee3.js",
       "_paths-396f020f.js",
       "_helperFunctions-688329b2.js",
-      "_index-e0ca695e.js",
-      "_classAdderBuilder-f411ee8a.js"
+      "_classAdderBuilder-f411ee8a.js",
+      "_index-e0ca695e.js"
     ],
     "css": [
       "assets/pages/favorites.svelte-b7e97b31.css",
@@ -257,7 +257,7 @@
     ]
   },
   "src/routes/settings.svelte": {
-    "file": "pages/settings.svelte-969a4b82.js",
+    "file": "pages/settings.svelte-ec4b2c20.js",
     "src": "src/routes/settings.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -392,13 +392,13 @@
       "assets/LoaderScreen-75a89f03.css"
     ]
   },
-  "_CategoryPage-68ce4e2a.js": {
-    "file": "chunks/CategoryPage-68ce4e2a.js",
+  "_CategoryPage-023b9c6c.js": {
+    "file": "chunks/CategoryPage-023b9c6c.js",
     "imports": [
       "_index-d0243fdd.js",
       "_helperFunctions-688329b2.js",
       "_MetaHead-03611795.js",
-      "_HeartTooltip-f718ba6d.js",
+      "_snackbarFunctions-382bfee3.js",
       "_paths-396f020f.js",
       "_LoaderScreen-755743ba.js"
     ],
@@ -407,12 +407,12 @@
       "assets/TitleItem-567ad040.css"
     ]
   },
-  "_HeartTooltip-f718ba6d.js": {
-    "file": "chunks/HeartTooltip-f718ba6d.js",
+  "_snackbarFunctions-382bfee3.js": {
+    "file": "chunks/snackbarFunctions-382bfee3.js",
     "imports": [
       "_index-d0243fdd.js",
-      "_index-e0ca695e.js",
       "_classAdderBuilder-f411ee8a.js",
+      "_index-e0ca695e.js",
       "_helperFunctions-688329b2.js"
     ]
   },
