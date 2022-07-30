@@ -21,7 +21,7 @@
 {:else}
 	<h2>
 		{nav} Song:
-		<a href={`${base}${link}`}>
+		<a sveltekit:prefetch href={`${base}${link}`}>
 			<em>{songTitle}</em>
 		</a>
 	</h2>

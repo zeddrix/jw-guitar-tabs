@@ -9,7 +9,7 @@
 <div class="ui stackable three column grid">
 	{#each cats as c (c)}
 		<div class="column card">
-			<a href={`${base}/categories/${c}-songs`}>
+			<a sveltekit:prefetch href={`${base}/categories/${c}-songs`}>
 				<img src={`${base}/img/guitars/${c}-guitar.jpg`} alt={`guitar image for ${c} category`} />
 				<p class="centered">
 					{capital1stLetter(c)}{c === `children` ? `'s` : ``}

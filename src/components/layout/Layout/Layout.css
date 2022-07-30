@@ -4,10 +4,10 @@
 	-moz-user-drag: none;
 	-o-user-drag: none;
 
-	user-select: none;
+	/* user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
-	-ms-user-select: none;
+	-ms-user-select: none; */
 
 	-webkit-tap-highlight-color: transparent;
 }

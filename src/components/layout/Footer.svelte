@@ -5,8 +5,8 @@
 </script>
 
 <p class="footer">
-	<a href="{base}/copyright">Copyright</a> &copy; {new Date().getFullYear()} |
-	<a href="{base}/copyright">Terms of Use</a> | JW Guitar Tabs |
+	<a sveltekit:prefetch href="{base}/copyright">Copyright</a> &copy; {new Date().getFullYear()} |
+	<a sveltekit:prefetch href="{base}/copyright">Terms of Use</a> | JW Guitar Tabs |
 	<NewTabLink href="https://zeddrix.com/" text="BeAmaZedd" />
 </p>
 

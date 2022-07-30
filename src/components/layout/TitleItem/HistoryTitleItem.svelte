@@ -11,7 +11,7 @@
 	const { title, category, dateTime, link } = his;
 </script>
 
-<a href={link} class="title-item">
+<a sveltekit:prefetch href={link} class="title-item">
 	<div class="content">
 		{title}
 		<span class="category">{category}</span>

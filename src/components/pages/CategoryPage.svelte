@@ -12,6 +12,16 @@
 	const original = category === 'original';
 
 	$: songs = kingdom ? $kingdomStore : original ? $originalStore : $childrenStore;
+
+	// Making an array of songlinks for svelte.config.js
+	// import { createLink } from '$utils/helperFunctions';
+	// let songsLinksArray = [];
+	// $: songs.forEach((song) => {
+	// 	const s = createLink(song.category, song.num, song.officialurl);
+	// 	songsLinksArray.push(`'${s}'`);
+	// });
+	// $: console.log(songsLinksArray);
+	// <!-- <p>[{songsLinksArray}]</p> -->
 </script>
 
 <h1>{addSForChildrenCat(category)} Songs</h1>

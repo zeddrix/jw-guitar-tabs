@@ -26,6 +26,8 @@
 
 	const link = createLink(category, num, officialurl);
 
+	// console.log(link);
+
 	const favoritesFromLS = JSON.parse(localStorage.getItem('favorites'));
 	if (favoritesFromLS) {
 		favorites.set(favoritesFromLS);
@@ -66,7 +68,7 @@
 	};
 </script>
 
-<a href={`${base}${link}`} class="title-item">
+<a sveltekit:prefetch href={`${base}${link}`} class="title-item">
 	{songTitle}
 	<Wrapper rich>
 		<img
@@ -77,6 +79,6 @@
 			class="heart-img"
 		/>
 
-		<HeartTooltip remove={titleIsFavorite} />
+		<!-- <HeartTooltip remove={titleIsFavorite} /> -->
 	</Wrapper>
 </a>

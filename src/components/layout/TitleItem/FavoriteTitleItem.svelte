@@ -27,7 +27,7 @@
 	};
 </script>
 
-<a href={`${base}${link}`} class="title-item">
+<a sveltekit:prefetch href={`${base}${link}`} class="title-item">
 	<div class="content">
 		{title}
 		<span class="category">{category}</span>

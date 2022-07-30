@@ -7,6 +7,9 @@ export const kingdomStore = writable([]);
 export const originalStore = writable([]);
 export const childrenStore = writable([]);
 
+// export const songsLinksStore = writable([]);
+export const songsLinksStore = ['/categories/kingdom-songs/5-gods-wondrous-works-guitar-tabs/'];
+
 // FEATURES
 export const favorites = writable([]);
 export const currentFavorite = writable(false);

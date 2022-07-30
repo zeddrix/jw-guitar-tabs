@@ -56,6 +56,7 @@
 {:else if songsLoaded && validSongId}
 	<h1>
 		{headTitle}
+		<!-- The song title is the same as the title inside the <head><title></title></head> tag -->
 	</h1>
 	<div class="tab-page_container">
 		{#if prevSong}
