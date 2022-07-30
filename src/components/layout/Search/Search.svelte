@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './Search.css';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import Typeahead from 'svelte-typeahead';
 
 	import type { SearchResultType, SongType } from '$lib/customTypes';
@@ -25,7 +26,7 @@
 
 		const songId = category === 'kingdom' ? officialurl : `${num}-${officialurl}`;
 
-		goto(`/categories/${category}-songs/${songId}`);
+		goto(`${base}/categories/${category}-songs/${songId}`);
 
 		value = '';
 	};
