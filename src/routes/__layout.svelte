@@ -12,7 +12,13 @@
 		fetchingSongsStore,
 		history
 	} from '$lib/store';
-	import { get1stPath, get2ndPath, get3rdPath, sortSongs } from '$utils/helperFunctions';
+	import {
+		get1stPath,
+		get2ndPath,
+		get3rdPath,
+		get4thPath,
+		sortSongs
+	} from '$utils/helperFunctions';
 	import calculateSongsCount from '$utils/calculateSongsCount';
 	import {
 		createChildrenSongsWithCat,
@@ -75,8 +81,9 @@
 	$: if (url) {
 		let firstPath = get1stPath(url);
 
-		if (firstPath === 'categories') {
+		if (firstPath == 'categories') {
 			let urlCategory = get2ndPath(url);
+
 			let thirdPath = get3rdPath(url);
 
 			const kingdom = urlCategory === 'kingdom-songs';
@@ -107,8 +114,6 @@
 			}
 		}
 	}
-
-	$: console.log('$history.length', $history.length);
 </script>
 
 <Layout><slot /></Layout>
