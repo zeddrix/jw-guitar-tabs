@@ -20,9 +20,9 @@
 	<Row>
 		<Section>
 			<IconButton class="material-icons" on:click={onToggle}>menu</IconButton>
-			<Title style="margin-right: 1rem;"
-				><a href="/jw-guitar-tabs/" style="color: white;">JW Guitar Tabs</a></Title
-			>
+			<Title style="margin-right: 1rem;">
+				<a href="/jw-guitar-tabs/" style="color: white;">JW Guitar Tabs</a>
+			</Title>
 			<Search />
 		</Section>
 		<Section align="end" toolbar>

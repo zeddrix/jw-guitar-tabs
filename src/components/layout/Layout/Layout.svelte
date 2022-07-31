@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CookiesBanner from '../CookiesBanner.svelte';
+	import CookiesBanner from '../CookiesBanner/CookiesBanner.svelte';
 	import Appbar from '../Appbar/Appbar.svelte';
 	import Footer from '../Footer.svelte';
 
