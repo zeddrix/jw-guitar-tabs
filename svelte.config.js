@@ -1,6 +1,5 @@
 import preprocess from 'svelte-preprocess';
 import adapter_static from '@sveltejs/adapter-static';
-import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -155,18 +154,7 @@ const config = {
 				'/categories/children-songs/1-this-is-my-family-guitar-tabs'
 			]
 		},
-		trailingSlash: 'always',
-		vite: {
-			resolve: {
-				alias: {
-					$utils: path.resolve('./src/utils'),
-					$components: path.resolve('./src/components')
-				}
-			},
-			optimizeDeps: {
-				include: ['fuzzy', 'lodash.get', 'lodash.isequal', 'lodash.clonedeep']
-			}
-		}
+		trailingSlash: 'always'
 	}
 };
 

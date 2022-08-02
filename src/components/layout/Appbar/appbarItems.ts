@@ -45,7 +45,7 @@ export const shares = [
 	},
 	{
 		social: 'Email',
-		link: 'mailto:?subject=I%20love%20this%20site!%20It&#x27;s%20a%20website%20where%20people%20who%20love%20our%20JW%20songs%20can%20enjoy%20playing%20the%20simplest%20tabs%20on%20their%20guitar!%20Check%20it%20out!&amp;body=https%3A%2F%2Fjwguitartabs.zeddrix.com',
+		link: 'mailto:?subject=I%20love%20this%20site!%20It%20is%20a%20website%20where%20people%20who%20love%20our%20JW%20songs%20can%20enjoy%20playing%20the%20simplest%20tabs%20on%20their%20guitar!%20Check%20it%20out!&amp;body=https%3A%2F%2Fjwguitartabs.zeddrix.com',
 		svg: 'M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z'
 	}
 ];
