@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "internal/immutable/start-6baf3577.js",
+    "file": "internal/immutable/start-7306008d.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -23,7 +23,7 @@
       "src/routes/copyright.svelte",
       "src/routes/favorites.svelte",
       "src/routes/history.svelte",
-      "_index-42fd944d.js",
+      "_index-c5e3733e.js",
       "src/routes/layout__old.svelte",
       "src/routes/settings.svelte"
     ]
@@ -285,13 +285,13 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "internal/immutable/pages/index.svelte-8b7afd87.js",
+    "file": "internal/immutable/pages/index.svelte-48cc2515.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
       "_index-fbf436af.js",
       "_MetaHead-387379f0.js",
-      "_index-42fd944d.js",
+      "_index-c5e3733e.js",
       "_helperFunctions-d89d7626.js",
       "_index-2494906d.js",
       "_preload-helper-56d33358.js",
@@ -454,8 +454,8 @@
       "internal/immutable/assets/ClearAllButton-e3105ac9.css"
     ]
   },
-  "_index-42fd944d.js": {
-    "file": "internal/immutable/chunks/index-42fd944d.js",
+  "_index-c5e3733e.js": {
+    "file": "internal/immutable/chunks/index-c5e3733e.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-fbf436af.js",
@@ -474,12 +474,12 @@
     ]
   },
   "node_modules/svelte-carousel/src/main.js": {
-    "file": "internal/immutable/chunks/main-4e322dfd.js",
+    "file": "internal/immutable/chunks/main-b9470e01.js",
     "src": "node_modules/svelte-carousel/src/main.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-fbf436af.js",
-      "_index-42fd944d.js",
+      "_index-c5e3733e.js",
       "_MetaHead-387379f0.js",
       "_helperFunctions-d89d7626.js",
       "_index-2494906d.js",
@@ -493,13 +493,21 @@
       "internal/immutable/assets/main-f76ac12e.css"
     ]
   },
-  "Layout.css": {
-    "file": "internal/immutable/assets/Layout-742bafa2.css",
-    "src": "Layout.css"
+  "TabsPage.css": {
+    "file": "internal/immutable/assets/TabsPage-859bcbe1.css",
+    "src": "TabsPage.css"
   },
-  "src/routes/__error.css": {
-    "file": "internal/immutable/assets/__error-05ff2093.css",
-    "src": "src/routes/__error.css"
+  "src/routes/settings.css": {
+    "file": "internal/immutable/assets/settings-4c634fb0.css",
+    "src": "src/routes/settings.css"
+  },
+  "node_modules/svelte-carousel/src/main.css": {
+    "file": "internal/immutable/assets/main-f76ac12e.css",
+    "src": "node_modules/svelte-carousel/src/main.css"
+  },
+  "TitleItem.css": {
+    "file": "internal/immutable/assets/TitleItem-b6217feb.css",
+    "src": "TitleItem.css"
   },
   "src/routes/about.css": {
     "file": "internal/immutable/assets/about-5477586d.css",
@@ -509,44 +517,36 @@
     "file": "internal/immutable/assets/ClearAllButton-e3105ac9.css",
     "src": "ClearAllButton.css"
   },
+  "src/routes/__error.css": {
+    "file": "internal/immutable/assets/__error-05ff2093.css",
+    "src": "src/routes/__error.css"
+  },
   "LoaderScreen.css": {
     "file": "internal/immutable/assets/LoaderScreen-acbf968e.css",
     "src": "LoaderScreen.css"
-  },
-  "CategoryPage.css": {
-    "file": "internal/immutable/assets/CategoryPage-79781705.css",
-    "src": "CategoryPage.css"
-  },
-  "TitleItem.css": {
-    "file": "internal/immutable/assets/TitleItem-b6217feb.css",
-    "src": "TitleItem.css"
-  },
-  "src/routes/history.css": {
-    "file": "internal/immutable/assets/history-a3458f3b.css",
-    "src": "src/routes/history.css"
-  },
-  "index.css": {
-    "file": "internal/immutable/assets/index-e10b48b8.css",
-    "src": "index.css"
-  },
-  "src/routes/settings.css": {
-    "file": "internal/immutable/assets/settings-4c634fb0.css",
-    "src": "src/routes/settings.css"
-  },
-  "src/routes/favorites.css": {
-    "file": "internal/immutable/assets/favorites-26652ec3.css",
-    "src": "src/routes/favorites.css"
-  },
-  "TabsPage.css": {
-    "file": "internal/immutable/assets/TabsPage-859bcbe1.css",
-    "src": "TabsPage.css"
   },
   "NotFoundScreen.css": {
     "file": "internal/immutable/assets/NotFoundScreen-ae7c9c0c.css",
     "src": "NotFoundScreen.css"
   },
-  "node_modules/svelte-carousel/src/main.css": {
-    "file": "internal/immutable/assets/main-f76ac12e.css",
-    "src": "node_modules/svelte-carousel/src/main.css"
+  "CategoryPage.css": {
+    "file": "internal/immutable/assets/CategoryPage-79781705.css",
+    "src": "CategoryPage.css"
+  },
+  "src/routes/history.css": {
+    "file": "internal/immutable/assets/history-a3458f3b.css",
+    "src": "src/routes/history.css"
+  },
+  "Layout.css": {
+    "file": "internal/immutable/assets/Layout-742bafa2.css",
+    "src": "Layout.css"
+  },
+  "src/routes/favorites.css": {
+    "file": "internal/immutable/assets/favorites-26652ec3.css",
+    "src": "src/routes/favorites.css"
+  },
+  "index.css": {
+    "file": "internal/immutable/assets/index-e10b48b8.css",
+    "src": "index.css"
   }
 }
