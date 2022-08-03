@@ -9,9 +9,10 @@
 	export let category: string;
 
 	const link = createLink(category, num, officialurl);
+	const baseNLink = `${base}${link}`;
 </script>
 
-<a sveltekit:prefetch href={`${base}${link}`} on:touchstart={() => goto(link)} class="card">
+<a sveltekit:prefetch href={baseNLink} on:touchstart={() => goto(baseNLink)} class="card">
 	<img
 		src={`${base}/img/guitars/${category}-guitar.jpg`}
 		alt={`guitar image for ${category} category`}
